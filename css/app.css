@@ -1,0 +1,648 @@
+@charset "UTF-8";
+
+body,
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.a {
+  color: #1779ba;
+}
+
+.a:hover,
+.a:focus {
+  color: #1468a0;
+  text-decoration: underline;
+}
+
+.grayscale {
+  filter: grayscale(70%);
+}
+
+.mulish {
+  font-family: 'Mulish', 'Inter', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.top-bar,
+.top-bar ul {
+  background-color: transparent;
+}
+
+.sticky {
+  background-color: transparent;
+  transition: background 0.5s ease;
+}
+
+.is-stuck {
+  background-color: black;
+}
+
+.top-bar {
+  height: 5rem;
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 1px solid white;
+}
+
+a, a:focus {
+  color: white;
+}
+
+.off-canvas {
+  background-color: black;
+}
+
+.off-canvas li {
+  margin-bottom: 1.5rem;
+}
+
+.top-bar-title {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 0.16em;
+  opacity: 0.8;
+}
+
+.title-bar-title {
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 0.16em;
+  opacity: 0.8;
+}
+
+.top-bar .registration-button {
+  color: white;
+  background-color: transparent;
+  transition: background-color .25s ease-out, color .25s ease-out;
+}
+
+.top-bar .registration-button:hover {
+  color: black;
+  background-color: white;
+}
+
+.section {
+  min-height: 40rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.text-center-small {
+  text-align: center;
+}
+
+@media print, screen and (min-width: 40em) {
+  .section {
+    min-height: 50rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.header-section {
+  background: url("../img/header.webp") 100% no-repeat;
+  background-size: cover;
+}
+
+.header-section h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+.header-description {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.header-content {
+  padding-top: 3rem;
+}
+
+.header-info {
+  margin-bottom: 2rem;
+}
+
+.header-icon {
+  width: 27px;
+  max-height: 27px;
+  margin-bottom: 1rem;
+}
+
+.tg-icon {
+  width: 27px;
+  max-height: 27px;
+  margin-right: 1rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .section {
+    min-height: 50rem;
+  }
+
+  .header-section h1 {
+    font-size: 3em;
+  }
+
+  .header-description {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  .header-section h1 {
+    font-size: 4em;
+  }
+
+  .text-center-small {
+    text-align: inherit;
+  }
+
+  .header-buttons {
+    max-width: 55rem;
+  }
+
+  .header-info {
+    max-width: 70rem;
+  }
+
+  .header-icon {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .header-content {
+    padding-top: 6rem;
+  }
+}
+
+.header-span {
+  font-size: 1.1em;
+}
+
+@media print, screen and (max-width: 40em) {
+  .header-span {
+    font-size: 1em;
+  }
+}
+
+.registration-button {
+  padding: 0.75rem 2rem 0.75rem 2rem;
+  margin: 0;
+  border-radius: 2rem;
+}
+
+.white-on-black {
+  color: white;
+  background-color: black;
+}
+
+.black-on-white {
+  color: black;
+  background-color: white;
+}
+
+.telegram-button {
+  font-weight: 300;
+  font-size: 1.2em;
+  text-decoration-line: underline;
+  color: white;
+}
+
+.about-card,
+.speaker-card,
+.speakers-count-card,
+.org-card {
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.black-border {
+  border: 1px solid black;
+}
+
+.black-border:hover {
+  border-color: #1779ba;
+}
+
+.white-border {
+  border: 1px solid white;
+}
+
+.about-title {
+  font-size: 1.8em;
+}
+
+.about-card h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.about-card p {
+  font-size: 0.85em;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.3em;
+  margin-bottom: 3rem;
+}
+
+.about-description {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+
+.goals-iter {
+  margin-top: 2rem;
+}
+
+.goals-iter span {
+  font-size: 6.25em;
+}
+
+.goals-iter p {
+  font-size: 1.2em;
+}
+
+.theme-block {
+  background-color: #121212;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #2C2C2C;
+  min-height: 5rem;
+  font-size: 1.2em;
+  width: 100%;
+  display: flex;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .goals-iter p {
+    font-size: 1.3em;
+  }
+
+  .theme-block {
+    font-size: 1.3em;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  .about-title {
+    font-size: 2.2em;
+  }
+
+  .section-title {
+    font-size: 4.5em;
+  }
+
+  .about-description {
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+
+  .goals-iter span {
+    font-size: 6.25em;
+  }
+
+  .goals-iter p {
+    font-size: 1.4em;
+  }
+
+  .theme-block {
+    font-size: 1.5em;
+  }
+}
+
+.speakers-count-card {
+  font-size: 1.4em;
+  padding: 2rem;
+}
+
+@media print, screen and (max-width: 40em) {
+  .speakers-count-card {
+    font-size: 1.2em;
+  }
+}
+
+.speaker-card {
+  font-size: 1.1em;
+}
+
+.card-img {
+  max-height: 10rem;
+}
+
+@media print, screen and (max-width: 40em) {
+  .speaker-card {
+    font-size: 1em;
+    padding: 1rem;
+  }
+
+  .card-img {
+    max-height: 35vw;
+  }
+}
+
+.speaker-card > .grid-x {
+  height: 100%;
+}
+
+.speaker-name {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.speaker-org-img {
+  max-width: 3rem;
+  max-height: 3rem;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.speaker-desctiption {
+  font-size: 0.8em;
+  margin-bottom: 0;
+  color: #535353;
+}
+
+.org-card {
+  min-height: 18rem;
+}
+
+.org-card .arrow {
+  max-width: 18px;
+}
+
+.org-card-title {
+  font-size: 1em;
+  font-weight: bold;
+  min-height: 2.5rem;
+}
+
+.org-card ul {
+  font-size: 1.1em;
+}
+
+.org-card li {
+  list-style-type: circle;
+}
+
+.org-card-other p {
+  font-size: 1.6em;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+@media print, screen and (max-width: 40em) {
+  .org-card-other p {
+    font-size: 1.2em;
+    padding-top: 1rem;
+  }
+}
+
+.doc-card {
+  font-size: 1.75em;
+  position: relative;
+}
+
+.doc-card > div {
+  position: absolute;
+  top: 40%;
+  left: 1rem;
+}
+
+@media print, screen and (max-width: 40em) {
+  .doc-card {
+    font-size: 5vw;
+  }
+
+  .doc-card > div {
+    top: 30%;
+  }
+}
+
+.doc-card .a {
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.reg-text {
+  font-size: 1.5em;
+}
+
+.reg-text-small {
+  font-style: italic;
+  opacity: 0.6;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+@media print, screen and (max-width: 40em) {
+  .reg-section {
+    min-height: auto;
+  }
+
+  .reg-text {
+    font-size: 1.2em;
+  }
+
+  .reg-text-small {
+    font-size: 1em;
+  }
+}
+
+.footer-section {
+  border-top: 1px solid #2C2C2C;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+@media print, screen and (max-width: 40em) {
+  .footer-section {
+    text-align: center;
+  }
+}
+
+.footer-title {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 0.16em;
+  opacity: 0.8;
+}
+
+.footer-icon {
+  width: 27px;
+  max-height: 27px;
+  margin-right: 1rem;
+}
+
+.footer-span {
+  font-size: 1.1em;
+}
+
+.footer-section ul {
+  font-size: 0.9em;
+}
+
+.footer-section li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-org {
+  text-align: center;
+  font-size: 0.7em;
+  opacity: 0.3;
+}
+
+.reveal-overlay {
+  background-color: rgba(10, 10, 10, 0.85);
+}
+
+.reveal {
+  padding: 3rem;
+}
+
+.registration-form .fieldset {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.registration-form fieldset legend {
+  font-size: .875rem;
+}
+
+.registration-form fieldset input {
+  display: none;
+}
+
+.registration-form fieldset input + label,
+.registration-form fieldset input + label:active {
+  background-color: white;
+  border: 1px solid #1779ba;
+  color: black;
+  width: 49%;
+  margin: 0;
+}
+
+.registration-form fieldset .button:hover, 
+.registration-form fieldset .button:focus {
+  background-color: #1779ba;
+  color: white ;
+}
+
+.registration-form fieldset input:checked + label,
+.registration-form fieldset input:checked + label:active {
+  background-color: #1779ba;
+  color: white ;
+}
+
+.registration-form-variable {
+  display: none;
+}
+
+.file-label {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 0px;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.registration-form-filename {
+  display:block;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  width:100%;
+  height:2.4375rem;
+  padding:.5rem;
+  border:1px solid #cacaca;
+  border-radius:0;
+  background-color:#fefefe;
+  -webkit-box-shadow:inset 0 1px 2px rgba(10,10,10,.1);
+  box-shadow:inset 0 1px 2px rgba(10,10,10,.1);
+  font-family:inherit;
+  font-size:1rem;
+  font-weight:400;
+  line-height:1.5;
+  -webkit-transition:border-color .25s ease-in-out,-webkit-box-shadow .5s;
+  transition:border-color .25s ease-in-out,-webkit-box-shadow .5s;
+  transition:box-shadow .5s,border-color .25s ease-in-out;
+  transition:box-shadow .5s,border-color .25s ease-in-out,-webkit-box-shadow .5s;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none
+}
+
+.reveal {
+  border-radius: 1rem;
+}
+
+.support-qrcode {
+  text-align: center;
+}
+
+.support-qrcode img {
+  width: 100%;
+  max-width: 20rem;
+}
+
+.program-section h3 {
+  font-weight: bold;
+}
+
+.program-section p {
+  line-height: 1.2em;
+}
+
+.program-block {
+  background-color: #EEEEEE;
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #CACACA;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.program-time {
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
+.program-description {
+  font-size: 1.1em;
+}
+
+.program-description-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@media print, screen and (max-width: 40em) {
+  .program-time {
+    font-size: 1.2em;
+  }
+
+  .program-description {
+    font-size: 1em;
+  }
+
+  .program-description-title {
+    font-size: 1.1em;
+  }
+
+  .program-block {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+}
