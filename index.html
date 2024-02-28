@@ -72,6 +72,8 @@
 						</div>
 						<div class="top-bar-right">
 							<ul class="menu" data-magellan data-offset="28">
+								<li class="show-for-large"><button class="registration-button white-border"
+										data-open="registration-form">Регистрация</button></li>
 								<li><a href="#about">О мероприятии</a></li>
 								<li><a href="#feedback">Отзывы</a></li>
 								<li><a href="#organizations" data-close>Организаторы</a></li>
@@ -523,7 +525,7 @@
 					<div class="org-card cell callout" data-equalizer-watch>
 						<div class="grid-y" style="height: 100%;">
 							<div class="cell shrink">
-								<h3 class="org-card-title">Межрегиональный проект «Факел» (Омск, Москва)</h3>
+								<h3 class="org-card-title">Межрегиональный проект «Факел» (Омск)</h3>
 							</div>
 							<div class="cell auto">
 								<div class="grid-x grid-margin-x align-middle">
@@ -589,6 +591,47 @@
 				</div>
 			</div>
 		</section>
+		<section id="documents" class="section docs-section">
+			<div class="grid-container">
+				<h2 class="section-title text-center-small">Документы</h2>
+				<div class="grid-x grid-margin-x grid-margin-y small-up-2 large-up-4">
+					<div class="doc-card cell">
+						<img src="img/file.svg">
+						<div>
+							<img src="img/arrow.svg">
+							<br>
+							<a class="a" href="docs/conference_rules.pdf" target="_blank">Регламент<br>конференции</a>
+						</div>
+					</div>
+					<div class="doc-card cell">
+						<img src="img/file.svg">
+						<div>
+							<img src="img/arrow.svg">
+							<br>
+							<a class="a" href="docs/template.docx"
+								download="Шаблон_статьи_для_сборника.docx">Шаблон<br>статьи<br>для сборника</a>
+						</div>
+					</div>
+					<div class="doc-card cell">
+						<img src="img/file.svg">
+						<div>
+							<img src="img/arrow.svg">
+							<br>
+							<a class="a" href="docs/politics_of_personal_data.pdf"
+								target="_blank">Политика<br>конфиденциа-<br>льности</a>
+						</div>
+					</div>
+					<div class="doc-card cell">
+						<img src="img/file.svg">
+						<div>
+							<img src="img/arrow.svg">
+							<br>
+							<a class="a" href="docs/offer.pdf" target="_blank">Договор<br>оферты</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<footer class="footer-section white-on-black">
 			<div class="grid-container">
 				<span class="footer-title">ПРОФКОН</span>
@@ -647,7 +690,7 @@
 					<input type="radio" name="type" value="simple" id="regtype-simple" required>
 					<label for="regtype-simple" class="button float-left">Слушатель</label>
 					<input type="radio" name="type" value="speaker" id="regtype-speaker" required>
-					<label for="regtype-speaker" class="button float-right">Докладчик</label>
+					<label for="regtype-speaker" class="button float-right">Докладчик/Спикер</label>
 				</fieldset>
 				<span class="form-error" data-form-error-for="regtype-simple" data-form-error-on="required">
 					Необходимо выбрать формат посещения.
@@ -681,14 +724,14 @@
 				</div>
 
 				<div id="registration-form-speaker" class="registration-form-variable">
-					<label>Тема доклада*
+					<label>Тема доклада/речи*
 						<input type="text" name="doc-title"
 							placeholder="Влияние развития средст связи на трудовые отношения">
 						<span class="form-error" data-form-error-on="required">
 							Необходимо заполнить тему доклада.
 						</span>
 					</label>
-					<label data-form-error-for="registration-form-file">Доклад</label>
+					<label data-form-error-for="registration-form-file">Доклад/тезисы</label>
 					<div class="grid-container" style="margin-bottom: 1rem; padding: 0;">
 						<div class="grid-x align-middle">
 							<div class="cell auto">
