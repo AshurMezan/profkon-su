@@ -1,0 +1,87 @@
+/* В этом файле стили к блокам Отзывы о Профконе 2023 и Некоторые доклады на Профкон 2023 */
+
+.wraper_video {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 15px 20px 15px;
+
+}
+@media (max-width: 1024px) {
+    .wraper_video  {
+        width: 100%;
+    }
+}
+
+.wraper_item {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    .wraper_item {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+.video_item {
+    width: calc(50% - 40px);
+    margin: 15px;
+}
+
+@media (max-width: 1024px) {
+    .video_item {
+        width: 90%;
+        margin: 15px;
+    }
+}
+
+/* @media print,
+screen and (max-width: 767px) {
+    .wraper_video .wraper_item .video_item iframe {
+        width: 100% !important;
+        aspect-ratio: 4/3;
+        height: auto;
+    }
+} */
+
+.div_h2__center {
+    text-align: center;
+}
+
+.video_item iframe {
+    width: 100%;
+}
+
+.wraper_video a {
+
+    color: blue;
+    text-decoration: underline;
+
+}
+
+.wraper_video h2 {
+    text-align: center;
+}
+
+.margin_top {
+    margin-top: 5%;
+}
+
+.wraper_video__wraper_video__a__white {
+    font-weight: bold;
+    color: white;
+}
+
+.video_item__text__margin {
+    margin: 10px 10px 0 10px;
+    font-size: 19px;
+}
+@media (max-width: 426px) {
+    .video_item__text__margin{
+        margin: -20px 10px 0 10px;
+    }
+}
